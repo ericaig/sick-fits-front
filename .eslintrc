@@ -1,0 +1,20 @@
+{
+  "extends": ["wesbos"],
+  "rules": {
+    "react/jsx-props-no-spreading": 1,
+    "react/prop-types": 0,
+    "semicolon": 0,
+    "prettier/prettier": ["error", {}, {
+      "semi": false,
+      "singleQuote": false
+    }],
+    "quotes": [
+      2,
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ]
+  }
+}
