@@ -3,6 +3,8 @@ import { useQuery } from "@apollo/client";
 import Head from "next/head";
 import styled from "styled-components";
 import DisplayError from "./ErrorMessage";
+// import SingleProductQuery from "../queries/single-product.graphql"
+// import { importSchema } from 'graphql-import'
 
 const ProductStyles = styled.div`
   display: grid;
@@ -16,6 +18,8 @@ const ProductStyles = styled.div`
     object-fit: contain;
   }
 `;
+
+// const SINGLE_PRODUCT_QUERY = SingleProductQuery
 
 const SINGLE_PRODUCT_QUERY = gql`
   query SINGLE_PRODUCT_QUERY($id: ID!) {

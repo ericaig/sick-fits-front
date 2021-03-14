@@ -1,0 +1,16 @@
+query SINGLE_PRODUCT_QUERY($id: ID!) {
+  Product(where: { id: $id }) {
+    id
+    name
+    description
+    status
+    price
+    photo {
+      id
+      altText
+      image {
+        publicUrlTransformed
+      }
+    }
+  }
+}

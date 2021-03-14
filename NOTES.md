@@ -48,3 +48,6 @@ query {
 
 ## useEffect
 Helps to monitor pieces of states or variables and when they change, we run some code. More like Subscriptions / Observables in rxjs
+
+## Context
+Helps to define data (local state) and functionalities at a very high level which is then accessible to all lower level of our application without having to pass it down via props to wherever datas are needed
